@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec 4 - Discussion</title>
+</head>
+<body>
+    <h3>Not recommended to use tables for HTML layout, why?</h3>
+    <pre>
+Using tables for layout in HTML is generally not recommended because it goes against the principles of semantic HTML and can lead 
+to a variety of issues:
+
+Semantics: HTML tables are meant for displaying tabular data, not for layout purposes. When you use tables for layout, you're not using
+HTML in a way that accurately represents the content on your page. This can make your code less understandable for both humans and
+assistive technologies like screen readers.
+
+Accessibility: Screen readers and other assistive technologies rely on the semantic structure of HTML to provide context to users. 
+When tables are used for layout, it can confuse these technologies and make it harder for users with disabilities to navigate and
+understand your content.
+
+Responsive Design: Tables don't lend themselves well to responsive design. They are inherently rigid and can be difficult to style
+and adapt for different screen sizes. Using modern CSS layout techniques like Flexbox or Grid is more flexible and allows for 
+better responsiveness.
+
+Maintenance: Tables can lead to more complex and harder-to-maintain code. When you use CSS for layout, you separate the content (HTML)
+from the presentation (CSS), making it easier to update and modify the layout without affecting the underlying content.
+
+Performance: Tables can lead to slower page loading times, especially if they're used excessively. This is because the browser
+needs to render the entire table before displaying anything on the page. Modern CSS-based layouts can often be more efficient.
+
+SEO: While search engines are quite sophisticated, using tables for layout may still affect how they interpret and rank your content.
+Semantic HTML helps search engines understand the structure and meaning of your content.
+
+Compatibility: Some older browsers or non-standard browsers may not handle tables for layout as well as they do modern CSS layouts.
+
+while tables are a powerful tool for presenting tabular data, they're not the right tool for page layout. It's better to use CSS 
+for layout purposes, as it's more flexible, maintainable, and in line with the semantic structure of HTML.
+    </pre>
+
+    <h3>Rewrite the above code in the “2. Procedure section” using semantic elements and attributes but 
+        without using the tables and CSS</h3>
+
+                <header>Front-End Development Course</header>
+
+                <main>
+                    <ul>Main Menu</ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                </main>
+
+                <aside>
+                    In this lab, students will study Front-End Development course
+                </aside>
+
+                <section>
+                    <img src="" alt="PIC">
+                </section>
+
+                <footer>Copyright © 2023 Web Programming LAB</footer>
+</body>
+</html>
