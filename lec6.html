@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec 6 - discussion </title>
+    <style>
+        .DIV1{
+            background: linear-gradient(to right, #8b0000, #ff0000);
+      color: red;
+        }
+
+        .DIV2{
+            background-image: url('https://www.napoleon.movie/images/share.jpg');
+            background-repeat: repeat-x;
+            background-size: cover;
+        }
+
+        #DIV3 {
+            position: relative;
+            width: 400px;
+        }
+
+        #DIV3 img {
+            position: absolute;
+            right: 0;
+            top : 0 ;
+            width: 300px;
+            height: 150px;
+        }
+
+        #box_model_text{
+            position: absolute;
+            margin-top: 200px;
+            width: 400px;
+            border: 2px solid #333;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1 - What are the differences between the opacity property and alpha channel in rgba or hsla? -->
+    <!-- The opacity property and the alpha channel in rgba (Red, Green, Blue, Alpha) 
+    and hsla (Hue, Saturation, Lightness, Alpha) are both used to control the
+     transparency of elements in CSS, but they have some key differences. -->
+
+
+    <!-- 2 - What is the most effective method for setting CSS color properties? -->
+    <!-- The most effective method for setting CSS color properties can depend on the specific use 
+    case and the requirements of the project like using color name , RBG , Hexadecimal and so on ... 
+
+    but actually from me i prefer to use Hexadecimal  -->
+
+    <div class="DIV1">
+        <p>Web Lab</p>
+        <p>PLC Lab</p>
+        <p>Communication Lab</p>
+    </div>
+
+    <div class="DIV2"></div>
+
+    <div id="DIV3">
+        <img src="https://www.napoleon.movie/assets/images/mobilebanner.jpg" alt="Fixed Image">
+        <div id="box_model_text">
+          <p>Napoleon is a 2023 epic historical drama film directed and produced by Ridley Scott
+             and written by David Scarpa. Based on the true story of Napoleon Bonaparte
+          </p>
+        </div>
+    </div>
+
+</body>
+</html>
