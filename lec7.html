@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec7-Discussion</title>
+    <style>
+        table , tr , td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h3>1.What are the generic font families? Explain in details with examples</h3>
+
+    <pre> Font families are used to determine the shape and style of the font, and there are backup fonts that appear in 
+    the event that the chosen font is not available on the user’s computer.
+
+    there are generic font families are broadly categorized into five types :    
+    1 - serief : <pre style="font-family: serif;">Fonts with small decorative strokes at the end of characters.</pre>
+    2 - Sans-Serif: <pre style="font-family: sans-serif;"> Fonts without the decorative strokes at the end of characters.</pre>
+    3 - Monospace: <pre style="font-family: monospace;"> Fonts where each character takes up the same horizontal space.</pre>
+    4 - Cursive: <pre style="font-family: cursive;"> Fonts that mimic handwriting or have a script-like appearance.</pre>
+    5 - Fantasy: <pre style="font-family: fantasy;"> Fonts with decorative and artistic styles that don't fit into the other categories.</pre>
+</pre>
+
+<h3>2.It is recommended to use each family of generic fonts in fallback style. Why?</h3>
+<pre>because not all users will have the same fonts installed on their devices. If a specific font is not available,
+the browser will move on to the next font in the list. Providing fallbacks ensures that there is always a defined font 
+for the text, even if the preferred font is not present.</pre>
+
+<h3>4. Insert list markers by CSS, once outside the border and another inside it, as shown below</h3>
+
+<table>
+    <ul>
+        <tr>
+            <td>
+                <li style="position: relative; left: -12px;"> 
+                    coffee - A brewed
+                </li>
+                <li style="list-style: none;">
+                    dring prepared 
+                </li>
+                <li style="list-style: none;">
+                    roasted from coffee
+                </li>
+                <li style="list-style: none;">
+                    beans...
+                </li>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <li style="position: relative; left: -12px;">
+                    Tea
+                </li>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <li style="position: relative; left: -12px;">
+                    Cola
+                </li>
+            </td>
+        </tr>
+    </ul>
+</table>
+
+<table>
+    <ul class="outside">
+        <tr>
+            <td>
+                <li> 
+                    coffee - A brewed <br>
+                    drink prepared <br>
+                    from roasted coffee <br>
+                    beans ...
+                </li>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <li>
+                    Tea
+                </li>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <li>
+                    Cola
+                </li>
+            </td>
+        </tr>
+    </ul>
+</table>
+
+
+</body>
+</html>
